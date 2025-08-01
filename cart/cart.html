@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - Cartizia</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <style>
+    .qty-btn, .remove-btn {
+      padding: 4px 8px;
+      margin: 0 4px;
+      background: #f0f0f0;
+      border: none;
+      cursor: pointer;
+    }
+    .remove-btn {
+      color: white;
+      background: #ff4d4d;
+      border-radius: 4px;
+    }
+    .remove-btn:hover {
+      background: #e60000;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section id="header">
+    <a href="#"><img src="../img/cartizia.png" class="cartizia" alt="Cartizia Logo" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../shop.html">Shop</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a class="active" href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="page-header" class="contact-header">
+    <h2>#Cart</h2>
+    <p>Review your order before checkout!</p>
+  </section>
+
+
+  <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+
+      </tbody>
+    </table>
+  </section>
+
+
+  <section id="cart-summary" class="section-p1">
+    <div class="total">
+      <h3>Total: ₹<span id="cart-total">0</span></h3>
+    </div>
+
+    <div class="checkout">
+      <h3>Coupon Code</h3>
+      <input type="text" placeholder="Enter your coupon" />
+
+      <h3>Delivery Address</h3>
+      <textarea rows="4" placeholder="Enter your delivery address"></textarea>
+
+      <h3>Payment Method</h3>
+      <select>
+        <option value="cod">Cash on Delivery</option>
+        <option value="upi">UPI</option>
+        <option value="card">Credit/Debit Card</option>
+      </select>
+
+      <button class="normal">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 22B, MG Road, Bangalore, KA 560001</p>
+      <p><strong>Phone:</strong> +91 91234 56789</p>
+      <p><strong>Hours:</strong> 10:00–18:00, MON–SAT</p>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Cartizia. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../cart.js"></script>
+</body>
+</html>
